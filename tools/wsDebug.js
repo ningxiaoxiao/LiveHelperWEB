@@ -9,17 +9,13 @@ function log(m) {
 
 $().ready(function () {
 
-    $('#ipandport').val("127.0.0.1:9111");
+    $('#ipandport').val("127.0.0.1");
 
     $('#con').click(function () {
-        var text = $('#ipandport').val();
-        var p = text.split(':');
-        if (p.length != 2) {
-            log("地址格式不对");
-            return;
-        }
+        var ip = $('#ipandport').val();
+
         $('#con').attr('disabled', true);
-        connect(p[0], p[1]);
+        connect(ip);
     });
 
 

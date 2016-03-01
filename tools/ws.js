@@ -2,16 +2,14 @@
  * Created by Administrator on 2016/3/1.
  */
 
-var address = "ws://127.0.0.1:9111";
+var port = 9111;
 var ws;
 var OnMsg = new Array();
 
-function connect(ip, port) {
+function connect(ip) {
     log("connect to " + ip + " " + port);
 
-    address = "ws://" + ip + ":" + port;
-
-    ws = new WebSocket(address);
+    ws = new WebSocket("ws://" + ip + ":" + 9111);
 
     ws.onopen = function () {
 
