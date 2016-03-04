@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>musicPlyaerUI</title>
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="../tools/ws.js"></script>
+    <script src="index.js"></script>
+
+
+</head>
+
+<body>
+
+<div id="player" style="width: 300px; height: 100px;">
+    <div class="player player-mid f-cb f-pr">
+        <div class="cover cover-sm f-pr">
+            <img id="cover" src="http://p4.music.126.net/xHTCjcRMSnhoZhbvNtD6WQ==/3296335868872002.jpg?param=90y90">
+            <div class="mask f-hide"></div>
+            <div id="play" class="bg play-bg f-hide" data-action="play"></div>
+            <div id="pause" class="bg pause-bg f-hide" data-action="pause"></div>
+        </div>
+        <div id="mid-ctrl" class="ctrlBox" style="">
+            <h2 class="f-pr">
+                <div class="title" style="">
+                    <marquee id="title" scrollamount="2">大七电台-《大七的朋友圈Vol.2》（朋友圈大来宾：阿肆）</marquee>
+                    <div id="sender" class="sub">点送人</div>
+                </div>
+
+            </h2>
+            <div class="bar">
+                <div id="bar" class="played j-flag" style="width: 50.08398%;">
+                    <span class="bg thumb j-flag"></span>
+                </div>
+            </div>
+        </div>
+        <span id="time" class="time">00:00/00:00</span>
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,190 @@
+.player {
+    margin-top: 10px;
+    border-radius: 2px;
+    box-shadow: 0 0 10px #ccc;
+    background: #fff;
+}
+
+.player-mid {
+    height: 66px;
+}
+
+.player-mid .ctrlBox {
+    padding-top: 7px;
+}
+
+.player-mid .time {
+    position: absolute;
+    color: #999;
+    right: 10px;
+    top: 46px;
+    font-size: 11px;
+}
+
+.player-mid .play-bg {
+    position: absolute;
+    left: 17px;
+    top: 17px;
+}
+
+.player-mid .pause-bg {
+    position: absolute;
+    left: 42px;
+    top: 42px;
+}
+
+.player-mid .mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+}
+
+.f-cb:after {
+    clear: both;
+    content: '.';
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* 清浮动 */
+.f-cb {
+    *zoom: 1;
+}
+
+.f-pr {
+    position: relative;
+    zoom: 1;
+}
+
+.cover, .cover img {
+    border-bottom-left-radius: 1px;
+    border-top-left-radius: 1px;
+}
+
+.cover {
+    float: left;
+    width: 90px;
+    height: 90px;
+}
+
+.cover img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 2px;
+}
+
+.cover-sm {
+    width: 66px;
+    height: 66px;
+}
+
+/* 背景图 */
+.bg {
+    background: url(http://music.163.com/style/web2/img/outchain/audio_sprite.png) no-repeat 0 9999px;
+}
+
+.ctrlBox {
+    float: left;
+    width: 200px;
+    padding-left: 7px;
+    position: relative;
+}
+
+.play-bg {
+    width: 32px;
+    height: 32px;
+    background-position: -68px -118px;
+    cursor: pointer;
+}
+
+.play-bg:hover {
+    background-position: -68px -167px;
+}
+
+.pause-bg {
+    width: 20px;
+    height: 20px;
+    background-position: 0 -60px;
+    cursor: pointer;
+}
+
+.pause-bg:hover {
+    background-position: 0 -157px;
+}
+
+.logo {
+    display: inline-block;
+    width: 17px;
+    height: 18px;
+    background-position: 0 -132px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+/* 歌曲标题 */
+h2 {
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 36px;
+    margin-bottom: 10px;
+    line-height: 36px;
+    font-size: 14px;
+    font-weight: normal;
+    zoom: 1;
+}
+
+h2 .title {
+    padding-top: 0px;
+    line-height: 18px;
+}
+
+h2 .title .sub {
+    font-size: 12px;
+    color: #666;
+}
+
+.bar {
+    width: 140px;
+}
+
+.bar, .bar .played {
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 2px;
+    background: #cdcdcd;
+}
+
+.bar .played, .bar .thumb {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.bar .played {
+    background: #e12828;
+}
+
+.bar .thumb {
+    right: -4px;
+    left: auto;
+    top: -3px;
+    width: 8px;
+    height: 8px;
+    background-position: -92px -14px;
+    cursor: pointer;
+}
+
+.f-hide, .js-hide {
+    display: none !important;
+}
