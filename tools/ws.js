@@ -4,23 +4,23 @@
 
 var port = 9111;
 var ws;
-var OnMsg = new Array();
+var OnMsg = [];
 
 function connect(ip) {
-    log("connect to " + ip + " " + port);
+    // log("connect to " + ip + " " + port);
 
-    ws = new WebSocket("ws://" + ip + ":" + 9111);
+    ws = new WebSocket("ws://" + ip + ":" + port);
 
     ws.onopen = function () {
 
-        log("on open");
+        //   log("on open");
     };
     ws.onerror = function () {
-        log("on err");
+        // log("on err");
     };
 
     ws.onclose = function () {
-        log("on close");
+        // log("on close");
     };
 
     ws.onmessage = function (event) {
@@ -37,4 +37,5 @@ function connect(ip) {
     }
 
 }
+
 
