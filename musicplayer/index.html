@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="css/style.css">
     <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="../tools/reconnectingwebsocket/reconnecting-websocket.js"></script>
     <script src="../tools/ws.js"></script>
     <script src="index.js"></script>
 
@@ -26,19 +27,23 @@
         <div id="mid-ctrl" class="ctrlBox" style="">
             <h2 class="f-pr">
                 <div class="title" style="">
-                    <marquee id="title" scrollamount="2">大七电台-《大七的朋友圈Vol.2》（朋友圈大来宾：阿肆）</marquee>
-                    <div id="sender" class="sub">点送人</div>
+                    <marquee scrollamount="2"><b id="title">歌名</b><span id="artist" class="artist">歌手名</span></marquee>
+                    <div id="sender" class="sub">这里是点送人</div>
+                    <div id="log" class="sub2"></div>
+
                 </div>
 
             </h2>
-            <div class="bar">
-                <div id="bar" class="played j-flag" style="width: 50.08398%;">
-                    <span class="bg thumb j-flag"></span>
-                </div>
-            </div>
+
         </div>
-        <span id="time" class="time">00:00/00:00</span>
+
+        <div class="bar">
+            <div id="bar" class="played j-flag" style="width: 50.08398%;"></div>
+        </div>
+
+
     </div>
+
 </div>
 
 

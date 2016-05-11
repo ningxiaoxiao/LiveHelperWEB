@@ -1,0 +1,33 @@
+.bg {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2px;
+    box-shadow: 0 0 10px #ccc;
+    width: 300px;
+    height: 100px;
+    background: #fcd000;
+    font-family: 微软雅黑;
+}
+
+.bg img {
+    position: relative;
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+
+.bg .name {
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 20px;
+    color: #0ebeff;
+    font-weight: bold;
+}
+
+.bg .text {
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 80px;
+}

@@ -5,6 +5,7 @@
     <title>wsDebug</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="reconnectingwebsocket/reconnecting-websocket.js"></script>
     <script src="ws.js"></script>
     <script src="wsDebug.js"></script>
     <!-- 新 Bootstrap 核心 CSS 文件 -->
@@ -14,7 +15,7 @@
 </head>
 <body>
 <div class="container">
-    <div class="col-md-12">
+    <div id="ipinput" class="col-md-12">
         <div class="input-group">
             <input id="ipandport" type="text" class="form-control" placeholder="输入地址">
         <span class="input-group-btn">
@@ -23,7 +24,12 @@
         </div>
     </div>
     <div id="wsmsg"></div>
-    <div class="col-md-12" id="log"></div>
+    <div class="col-md-12" id="log">
+
+
+    </div>
+
+
 </div>
 </body>
 </html>
