@@ -9,33 +9,11 @@
     <link rel="stylesheet" type="text/css" href="css/ns-style-other.css"/>
 </head>
 <body>
-
+<script src="../tools/reconnectingwebsocket/reconnecting-websocket.js"></script>
+<script src="../tools/ws.js"></script>
 <script src="js/modernizr.custom.js"></script>
 <script src="js/classie.js"></script>
 <script src="js/notificationFx.js"></script>
-
-<script>
-
-
-    setTimeout(function () {
-
-
-        // simulate loading (for demo purposes only)
-// create the notification
-        var notification = new NotificationFx({
-            message: '<div class="ns-thumb"><img src="http://uc.douyutv.com/upload/avatar/000/28/34/31_avatar_middle.jpg?rltime"/></div><div class="ns-content"><p><a href="#">Zoe Moulder</a> accepted your invitation.</p></div>',
-            layout: 'other',
-            ttl: 6000,
-            effect: 'thumbslider',
-            type: 'notice', // notice, warning, error or success
-        });
-
-        // show the notification
-        notification.show();
-
-    }, 1200);
-
-
-</script>
+<script src="js/msg.js"></script>
 </body>
 </html>

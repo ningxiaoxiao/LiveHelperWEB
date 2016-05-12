@@ -148,6 +148,10 @@
     background: #72BF7B;
 }
 
+.ns-box-inner {
+    /* border-radius: 5px;
+     box-shadow: 0 0 10px #ccc;*/
+}
 .ns-effect-loadingcircle .ns-box-inner {
     color: #72BF7B;
 }
